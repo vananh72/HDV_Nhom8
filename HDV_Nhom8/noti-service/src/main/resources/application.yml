@@ -1,0 +1,20 @@
+server:
+  port: 8084
+spring:
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: kimvananh0702@gmail.com
+    password: uimmbnsyefyskyom
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+  application:
+    name: noti-service
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
